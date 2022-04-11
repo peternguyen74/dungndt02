@@ -1,4 +1,4 @@
-👋 Hi, I’m @dungndt02
+Hi, I’m @dungndt02
 👀 I’m interested in C++.
 🌱 I’m currently studying Computer Science at Hanoi University of Science and Technology
     Other languages: English (Academic IELTS 7.0 expired in 2023)
