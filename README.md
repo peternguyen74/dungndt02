@@ -1,4 +1,4 @@
-### Hi I'm dungndt02, Vietnam
+Hi I'm dungndt02, Vietnam
 <!--
 **dungndt02/dungndt02** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
