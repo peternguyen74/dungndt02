@@ -1,14 +1,30 @@
-Hi I'm dungndt02, Vietnam
-<!--
-**dungndt02/dungndt02** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+const axios = require("axios");
+const fs = require("fs");
 
+const getQuote = async () => {
+  try {
+    const { data } = await axios.get("https://quotes.rest/qod?language=en&quot;);
+    const quote = data.contents.quotes[0].quote;
+    const author = data.contents.quotes[0].author;
 
-- 🌱 I’m currently studying Computer Science at Hanoi University of Science and Technology
--     Other languages: English(IELTS 7.0 expired in 2023)
-- 🔭 I’m currently working on C++.
-- 👯 I’m looking to collaborate on ...
-- 📫 How to reach me: 
-                      https://www.facebook.com/tuandung2789/
-                      https://github.com/dungndt02/dungndt02/edit/main/README.md
-                      https://www.instagram.com/peter.nguyen74/
+    console.log("new quote", `"${quote}"`);
 
+    return {
+      quote,
+      author,
+    };
+  } catch (err) {
+    console.error(err.message);
+    return {};
+  }
+};
+
+const generate = async () => {
+  const { quote, author } = await getQuote();
+
+  if (!quote) return;
+
+  fs.writeFileSync("README.md", `_**${quote}**_\n\n${author}`);
+};
+
+generate();
