@@ -1,30 +1,11 @@
-const axios = require("axios");
-const fs = require("fs");
+👋 Hi, I’m @dungndt02
+👀 I’m interested in C++.
+🌱 I’m currently studying Computer Science at Hanoi University of Science and Technology
+    Other languages: English (Academic IELTS 7.0 expired in 2023)
+💞️ I’m looking to collaborate on...
+📫 How to reach me:
+Github:    https://github.com/dungndt02
+Facebook:  https://www.facebook.com/tuandung2789/
+Instagram: https://www.instagram.com/peter.nguyen74/
 
-const getQuote = async () => {
-  try {
-    const { data } = await axios.get("https://quotes.rest/qod?language=en&quot;);
-    const quote = data.contents.quotes[0].quote;
-    const author = data.contents.quotes[0].author;
-
-    console.log("new quote", `"${quote}"`);
-
-    return {
-      quote,
-      author,
-    };
-  } catch (err) {
-    console.error(err.message);
-    return {};
-  }
-};
-
-const generate = async () => {
-  const { quote, author } = await getQuote();
-
-  if (!quote) return;
-
-  fs.writeFileSync("README.md", `_**${quote}**_\n\n${author}`);
-};
-
-generate();
+"𝙇𝙞𝙛𝙚 𝙞𝙨 𝙣𝙤𝙩 𝙩𝙤 𝙬𝙖𝙞𝙩 𝙛𝙤𝙧 𝙩𝙝𝙚 𝙨𝙩𝙤𝙧𝙢 𝙩𝙤 𝙥𝙖𝙨𝙨, 𝙞𝙩'𝙨 𝙖𝙗𝙤𝙪𝙩 𝙡𝙚𝙖𝙧𝙣𝙞𝙣𝙜 𝙩𝙤 𝙙𝙖𝙣𝙘𝙚 𝙞𝙣 𝙩𝙝𝙚 𝙧𝙖𝙞𝙣."
