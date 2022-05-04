@@ -7,5 +7,5 @@
 - 💞️ I’m looking to collaborate on ...
 - 📫 How to reach me:
     - Facebook: https://www.facebook.com/tuandung2789/
-    - Instagram: https://www.instagram.com/peter.nguyen74
+    - LinkedIn: https://www.linkedin.com/in/dungndt02
 - Freelancer.
